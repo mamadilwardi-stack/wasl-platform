@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="WASL network mark">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0d1b2a"/>
+      <stop offset="100%" stop-color="#020b1c"/>
+    </radialGradient>
+    <radialGradient id="cyanGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#67e8f9" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#22d3ee" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="amberGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fdba74" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#fb923c" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#fb923c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lineC" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#67e8f9" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="lineA" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fb923c" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#fdba74" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="40" fill="url(#bg)"/>
+  <!-- simplified dual-tone network sphere -->
+  <g transform="translate(100 100)">
+    <!-- cyan arcs left -->
+    <g stroke="url(#lineC)" stroke-width="1.2" fill="none" opacity="0.85">
+      <ellipse rx="62" ry="62" stroke-opacity="0.35"/>
+      <path d="M-55 -20 Q-30 -50 5 -48"/>
+      <path d="M-58 5 Q-20 -10 10 -30"/>
+      <path d="M-50 30 Q-15 10 20 -5"/>
+      <path d="M-40 48 Q0 25 35 10"/>
+      <path d="M-55 -35 L-25 -10 L-30 25 L-10 45"/>
+      <path d="M-20 -55 L5 -25 L-5 5 L15 35"/>
+    </g>
+    <!-- amber arcs right -->
+    <g stroke="url(#lineA)" stroke-width="1.2" fill="none" opacity="0.85">
+      <path d="M55 -20 Q30 -50 -5 -48"/>
+      <path d="M58 5 Q20 -10 -10 -30"/>
+      <path d="M50 30 Q15 10 -20 -5"/>
+      <path d="M40 48 Q0 25 -35 10"/>
+      <path d="M55 -35 L25 -10 L30 25 L10 45"/>
+      <path d="M20 -55 L-5 -25 L5 5 L-15 35"/>
+    </g>
+    <!-- cyan nodes -->
+    <g fill="#22d3ee">
+      <circle cx="-48" cy="-28" r="4.5"><animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/></circle>
+      <circle cx="-30" cy="-48" r="3.5"/>
+      <circle cx="-55" cy="5" r="5"/>
+      <circle cx="-35" cy="20" r="3"/>
+      <circle cx="-20" cy="-15" r="4"/>
+      <circle cx="-42" cy="40" r="3.5"/>
+      <circle cx="-8" cy="45" r="3"/>
+      <circle cx="-25" cy="-5" r="3"/>
+      <circle cx="-12" cy="18" r="4.2"/>
+    </g>
+    <!-- amber nodes -->
+    <g fill="#fb923c">
+      <circle cx="48" cy="-28" r="4.5"><animate attributeName="opacity" values="0.7;1;0.7" dur="3.2s" repeatCount="indefinite"/></circle>
+      <circle cx="30" cy="-48" r="3.5"/>
+      <circle cx="55" cy="5" r="5"/>
+      <circle cx="35" cy="20" r="3"/>
+      <circle cx="20" cy="-15" r="4"/>
+      <circle cx="42" cy="40" r="3.5"/>
+      <circle cx="8" cy="45" r="3"/>
+      <circle cx="25" cy="-5" r="3"/>
+      <circle cx="12" cy="18" r="4.2"/>
+    </g>
+    <!-- glow halos -->
+    <circle cx="-55" cy="5" r="12" fill="url(#cyanGlow)" opacity="0.55"/>
+    <circle cx="55" cy="5" r="12" fill="url(#amberGlow)" opacity="0.55"/>
+    <circle cx="-20" cy="-15" r="10" fill="url(#cyanGlow)" opacity="0.35"/>
+    <circle cx="20" cy="-15" r="10" fill="url(#amberGlow)" opacity="0.35"/>
+  </g>
+</svg>
